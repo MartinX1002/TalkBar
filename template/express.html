@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Export Bootstrap Modules -->
+    <link href="https://maxcdn.bootstrap.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://bootstrap.hexschool.com/docs/4.0/getting-started/javascript/#util"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!------------ END ------------>
+    <style type="text/css">
+        * {
+            font-family: "Microsoft JhengHei", 'Brush Script MT', cursive;
+            font-size: 20px;
+        }
+
+        body {
+            background: #FFC2C3;
+            display: flex;
+        }
+
+        .listitem-set {
+            height: 60px;
+            width: 240px;
+            background: #FE7773;
+        }
+
+        .change-color:hover {
+            background: #FFFFFF;
+        }
+
+        .img-3-4 {
+            width: 240px;
+            height: 180px;
+        }
+
+        .navbar-set {
+            background: #FE7773;
+            height: 770px;
+            width: 240px;
+        }
+
+        .horizontal-30px {
+            width: 100%;
+            height: 30px;
+            border-top: solid #FFFFFF 5px;
+        }
+
+        .vertical-20px {
+            width: 20px;
+            height: 20%;
+            border-right: solid #ACC0D8 1px;
+        }
+
+        .hot-context {
+            background-color: #FFC2C3;
+            line-height: 40px;
+        }
+
+        a.borderless {
+            border-top: 0 none;
+            border-left: 0 none;
+            border-right: 0 none;
+            border-bottom: 0 none;
+        }
+    </style>
+    <title>{{.web_title}}</title>
+</head>
+
+<body>
+    <nav class="nav navbar-set">
+        <img class="img-3-4" src="https://i.imgur.com/iuHy0Np.jpg" title="source: imgur.com" />
+        <ul class="list-group text-center" style="margin:-100px 0 0 0;">
+            <form action="/views/report" method="POST">
+                <input type="submit" value="相關報導 Report"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+            <form action="/views/editor" method="POST">
+                <input type="submit" value="作家專欄 Editor"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+            <form action="/views/law" method="POST">
+                <input type="submit" value="法律協助 Law"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+            <form action="/views/express" method="POST">
+                <input type="submit" value="心情抒發 Express"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+            <form action="/views/about" method="POST">
+                <input type="submit" value="關於我們 About"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+            <form action="/views/donate" method="POST">
+                <input type="submit" value="捐贈資訊 Donate"
+                    class="list-group-item list-group-item-action listitem-set change-color">
+            </form>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="Jumbotron text-center">
+            <h1 style="font-size:150px;">網站測試中</h1>
+        </div>
+        <hr class="horizontal-5px" />
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    今日熱門
+                    <p>
+                        <div class="list-group text-center">
+                            <a href="#"
+                                class="list-group-item list-group-item-action change-color borderless hot-context">
+                                T1
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action change-color borderless hot-context">
+                                T1
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action change-color borderless hot-context">
+                                T1
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action change-color borderless hot-context">
+                                T1
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action change-color borderless hot-context">
+                                T1
+                            </a>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
